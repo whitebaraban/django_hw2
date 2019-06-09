@@ -1,0 +1,95 @@
+.fixed-overlay {
+  text-align: center;
+  white-space: nowrap;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* https://habr.com/ru/post/252769/ */
+  visibility: visible;
+  transition: 0.5s; }
+  .fixed-overlay:after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: "";
+    /* https://habr.com/ru/post/252769/ */ }
+  .fixed-overlay .modal-window-container {
+    display: inline-block;
+    vertical-align: middle;
+    /* https://habr.com/ru/post/252769/ */ }
+    .fixed-overlay .modal-window-container .modal-window {
+      /* https://habr.com/ru/post/252769/ */
+      width: 380px;
+      background-color: #fff;
+      text-align: left;
+      padding-top: 0;
+      padding-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0px 30px #cea08a; }
+      .fixed-overlay .modal-window-container .modal-window h2 {
+        text-align: center;
+        color: #ce7286; }
+      .fixed-overlay .modal-window-container .modal-window form {
+        padding-left: 40px; }
+        .fixed-overlay .modal-window-container .modal-window form input, .fixed-overlay .modal-window-container .modal-window form textarea {
+          display: block;
+          width: 300px;
+          margin-bottom: 10px; }
+          .fixed-overlay .modal-window-container .modal-window form input:focus, .fixed-overlay .modal-window-container .modal-window form textarea:focus {
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2); }
+        .fixed-overlay .modal-window-container .modal-window form input {
+          height: 30px; }
+        .fixed-overlay .modal-window-container .modal-window form input[type="date"]::-webkit-inner-spin-button {
+          display: none; }
+        .fixed-overlay .modal-window-container .modal-window form button {
+          margin-top: 20px;
+          margin-left: 70px;
+          padding: 15px 15px;
+          font-size: 18px;
+          font-family: Open_Light;
+          font-weight: 100;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: white;
+          background-color: #ce7286;
+          border-radius: 5px;
+          border: 1px solid #ce7286;
+          box-sizing: border-box; }
+          .fixed-overlay .modal-window-container .modal-window form button:hover {
+            color: #ce7286;
+            background: #ffff;
+            transition: 0.5s; }
+      .fixed-overlay .modal-window-container .modal-window button:focus, .fixed-overlay .modal-window-container .modal-window input:focus, .fixed-overlay .modal-window-container .modal-window textarea:focus, .fixed-overlay .modal-window-container .modal-window .close:focus {
+        outline: 1px solid #cea08a;
+        transition: 0.5s; }
+      .fixed-overlay .modal-window-container .modal-window .close {
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px;
+        font-family: Open_Light;
+        position: relative;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        left: 400px;
+        top: -50px;
+        text-align: center; }
+        .fixed-overlay .modal-window-container .modal-window .close:hover {
+          box-shadow: 0 0 5px 1px #cea08a; }
+      .fixed-overlay .modal-window-container .modal-window .modal-window-adress {
+        font-family: Open_Light;
+        font-size: 14px;
+        text-align: center;
+        color: #cea08a;
+        display: block; }
+
+.hidden-win {
+  visibility: hidden;
+  opacity: 0; }

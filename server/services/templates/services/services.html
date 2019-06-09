@@ -1,0 +1,19 @@
+{% extends "mainapp/master.html" %}
+
+{% block title %}
+Услуги
+{% endblock %}
+
+{% block content %}
+<section>
+  <div class="content-block">
+    <h2>Услуги</h2>
+
+    <ul>
+     {% for itm in services %}
+        <li style="padding-bottom: 10px;"><a href="{{ forloop.counter0 }}">{{ itm.name }}</a><br>цена: {{ itm.price }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}
