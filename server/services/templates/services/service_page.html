@@ -1,0 +1,14 @@
+{% extends "mainapp/master.html" %}
+
+{% block title %}
+Услуги
+{% endblock %}
+
+{% block content %}
+<section>
+  <div class="content-block">
+    <h2>{{ service.name }}</h2>
+    <h3>Цена: {{ service.price }}</h3>
+  </div>
+</section>
+{% endblock %}

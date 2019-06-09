@@ -1,0 +1,22 @@
+header {
+  height: 230px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  padding-top: 30px;
+  box-sizing: border-box;
+  position: relative; }
+  header .logo-block {
+    text-align: center; }
+    header .logo-block .logo-text {
+      color: #ce7286;
+      /* #465b80 */
+      font-family: Open_Light;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 9px;
+      font-size: 54px;
+      text-decoration: none;}
+    header .logo-block .addres {
+      display: block;
+      font-size: 13px;
+      font-family: Poiret;
+      letter-spacing: 2.5px; }

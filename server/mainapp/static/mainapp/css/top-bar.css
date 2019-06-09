@@ -1,0 +1,55 @@
+.top-bar {
+  background: #6a9c9a;
+  width: 100%;
+  padding: 7px 0px;
+  font-size: 18px;
+  color: #fff;
+  font-family: Open_Light; }
+  .top-bar .top-bar-root {
+    max-width: 1280px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 5fr 250px 250px; }
+    .top-bar .top-bar-root .social {
+      padding: 5px 0 0 20px;
+      color: #e8324f; }
+      .top-bar .top-bar-root .social a {
+        margin-left: 5px; }
+        .top-bar .top-bar-root .social a:first-child {
+          margin-left: 0px; }
+      .top-bar .top-bar-root .social img {
+        padding: 1px; }
+    .top-bar .top-bar-root .tel, .top-bar .top-bar-root .online-rec {
+      text-align: right;
+      letter-spacing: 1px;
+      padding-right: 20px; }
+    .top-bar .top-bar-root .tel {
+      margin-top: 3px;
+      font-size: 20px;
+      position: relative; }
+      .top-bar .top-bar-root .tel a {
+        text-decoration: none;
+        color: #fff; }
+        .top-bar .top-bar-root .tel a:hover:before {
+          content: "+6 (666) "; }
+      .top-bar .top-bar-root .tel .tel-text {
+        position: absolute;
+        right: 20px;
+        bottom: 0px;
+        font-size: 10px; }
+    .top-bar .top-bar-root .online-rec button {
+      font-family: Open_Light;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: white;
+      background-color: #ce7286;
+      border-radius: 5px;
+      font-size: 15px;
+      border: 1px solid #ce7286;
+      box-sizing: border-box;
+      padding: 7px 15px; }
+      .top-bar .top-bar-root .online-rec button:hover {
+        color: #ce7286;
+        background: #ffff;
+        transition: 0.5s;
+        /*00CC33* rgba(206, 160, 138, 1) */ }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=1180" name="viewport" id="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta author="Barabanov Pavel">
+  <link rel="stylesheet" href="/static/mainapp/css/main.css">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-bar-root">
+      <div class="social">
+        <a href="#"><img src="/static/mainapp/img/instagram.png" alt="insta" width="25"></a>
+        <a href="#"><img src="/static/mainapp/img/vk.png" alt="vk" width="25"></a>
+        <a href="#"><img src="/static/mainapp/img/viber.png" alt="viber" width="25"></a>
+        <a href="#"><img src="/static/mainapp/img/telegram.png" alt="telegram" width="25"></a>
+        <a href="#"><img src="/static/mainapp/img/whatsapp.png" alt="whatsapp" width="25"></a>
+
+      </div>
+      <div class="online-rec">
+        <button class="online-singup-btn">Записаться</button>
+      </div>
+      <div class="tel">
+        <a href="#">666-66-66</a>
+        <span class="tel-text">телефон</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <header id="header" class="header">
+        <div class="logo-block">
+          <a href="#" class="logo-text">Lak.Studio</a>
+          <span class="addres">Санкт-Петербург, Исаакиевская площадь, дом 6</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/services/">Услуги</a></li>
+            <li><a href="/contacts/">Контакты</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main id="swup" class="transition-fade">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+
+  <div class="fixed-overlay hidden-win">
+    <div class="modal-window-container">
+      <div class="modal-window">
+        <a href="#" class="close">X</a>
+        <span class="modal-window-adress">Санкт-Петербруг</span>
+        <span class="modal-window-adress">Исаакиевская площадь, дом 6</span>
+        <h2>Онлайн запись</h2>
+        <form id="form">
+          Телефон*
+          <input type="text">
+          Удобная дата
+          <input type="date">
+          Комментарий
+          <textarea name="comment" id="" cols="30" rows="5" placeholder="Мастер Галина, удобное время 16:00"></textarea>
+          <button>Записаться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+     Барабанов П. / {% now "d-m-Y" %}
+  </footer>
+
+  <script src="/static/mainapp/js/main.js"></script>
+  <!-- http://vladimirchernyshov.ru/119-trendovyx-cvetov-dlya-sozdaniya-fantasticheskix-sajtov-na-50-zhivyx-primerax/ -->
+
+</body>
+</html>
